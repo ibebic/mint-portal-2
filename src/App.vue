@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <div v-html="rawHtml"></div>
     <img src="./assets/logo.png">
     <h3 class="well">{{ msg }}</h3>
     <h4>Essential Links</h4>
@@ -17,19 +16,10 @@
       <li><a href="http://vue-loader.vuejs.org/" target="_blank" class="btn btn-primary btn-sm">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" class="btn btn-primary btn-sm">awesome-vue</a></li>
     </ul>
+    <div>{{ date }}</div>
+    <div>{{ name }}</div>
   </div>
 </template>
 
-<script>
-export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-
-    }
-  }
-}
-</script>
-
+<script src="./mojKod.js"/>
 <style lang="scss">@import "style.scss";</style>

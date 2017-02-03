@@ -3,7 +3,6 @@ var webpack = require('webpack')
 
 module.exports = {
     entry: ['bootstrap-loader', './src/main.js'],
-  // entry: {'./src/main.js'},
   output: {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
@@ -25,11 +24,11 @@ module.exports = {
           // other vue-loader options go here
         }
       },
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /node_modules/
-      },
+      // {
+      //   test: /\.js$/,
+      //   loader: 'babel-loader',
+      //   exclude: /node_modules/
+      // },
       {
         test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/,
         loader: 'imports-loader?jQuery=jquery'
